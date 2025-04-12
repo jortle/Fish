@@ -7,6 +7,7 @@ using namespace std;
 
 int main() {
 
+
    // array for deck of cards - Done
    // function for drawing cards out of the deck - make 0 in the deck, while loop to not draw a 0 card - Kace 
    // Another array for both computer's hand and player's hand - Spaces as filler strings if hand not full - Makenzie
