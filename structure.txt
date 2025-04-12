@@ -1,0 +1,15 @@
+main.cpp
+creates the decks and starts the game loop
+
+gameLoop.cpp
+while score is not met, keeps the rounds going
+once score is met, the game ends and it announces the winner
+
+asks.cpp
+contains functions for asking if the player or computer has a card in their hand
+
+checkForPair.cpp
+* contains functions for checking if a pair exists when the computer asks and if the player asks
+
+
+any one can add other functions or files if they think it would be helpful. Just update this file with the new information please. 
