@@ -35,7 +35,7 @@ string deck[4][13] =   {"AS", "2S", "3S", "4S", "5S", "6S", "7S", "8S", "9S", "1
     }
 
     // Deal 7 cards to player and computer
-    for (int i = 0; i < initialHandSize; i++) {
+    for (int i = 0; i < HandSize; i++) {
         int index;
 
         // Dealing to player
