@@ -72,6 +72,7 @@ string deck[4][13] =   {"AS", "2S", "3S", "4S", "5S", "6S", "7S", "8S", "9S", "1
 srand(time(0));
        cout << deck[rand() % 4][rand() % 13] << endl;
    return 0;
+
 }
 
 
