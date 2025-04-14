@@ -16,43 +16,48 @@
 using namespace std;
 
 string playerAsks(string hand[], int size) {
-  string card;
-  cout << "What card would you like to check for" << endl;
-  for (int i = 0; i < size; i++) {
-    cout << hand[i] << " ";
+  string card = "  ";
+  while (card == "  ") {
+    cout << "What card would you like to check for" << endl;
+    for (int i = 0; i < size; i++) {
+      cout << hand[i] << " ";
+    }
+    cout << endl;
+    cin >> card;
   }
-  cout << endl;
-  cin >> card;
   return card;
 }
 
 string computerAsks(string hand[], int size) {
-  string card;
-  int max = size + 1;
   srand(time(0));
-  int cardNum = rand() % max;
-  card = hand[cardNum];
+  int cardNum = rand() % size;
+  string card = hand[cardNum];
+
   return card;
 }
 
 bool playerHasCard(string hand[], int size, string card) {
-  bool hasCard;
+  char targetValue = card[0];
+  bool hasCard = false;
+  string MyAnswer = "no";
   for (int i = 0; i < size; i++) {
     cout << hand[i] << " ";
   }
   cout << endl;
-  cout << "Do you have this card?" << card << endl;
-  cin >> hasCard;
+  cout << "Do you have a " << targetValue << "?" << endl;
+  cin >> MyAnswer;
+  if (MyAnswer == "yes") {
+    hasCard = true;
+  }
   return hasCard;
 }
 
 bool computerHasCard(string hand[], int size, string card) {
-  bool hasCard = false;
+  char targetValue = card[0];
   for (int i = 0; i < size; i++) {
-    if (hand[i] == card) {
-      hasCard = true;
-      break;
+    if (hand[i][0] == targetValue) {
+      return true;
     }
   }
-  return hasCard;
+  return false;
 }
