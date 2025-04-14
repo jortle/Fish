@@ -10,6 +10,7 @@ void removeCard(string hand[], int &handSize, string cardToRemove) {
   // Find the card position
   char valueToRemove = cardToRemove[0];
 
+
   for (int i = 0; i < handSize; i++) {
     if (hand[i][0] == valueToRemove) {
       // Shift all cards after this position left by one
@@ -19,6 +20,7 @@ void removeCard(string hand[], int &handSize, string cardToRemove) {
       handSize--; // Decrease the hand size
 
       return; // Exit after removing first occurrence
+
     }
   }
 }
@@ -38,6 +40,7 @@ void gameLoop(string playerHand[7], string computerHand[7],
 
   // Determine who goes first
   playerTurn = (firstToGo == 0);
+
 
   // Main game loop
   while (playerScore < 3 && computerScore < 3) {
@@ -96,6 +99,7 @@ void gameLoop(string playerHand[7], string computerHand[7],
                playerHandSize > 0 && computerHandSize > 0);
     }
   }
+
 
   // Announce winner
   cout << "\nGame Over!\n";

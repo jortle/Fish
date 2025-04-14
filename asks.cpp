@@ -61,3 +61,16 @@ bool computerHasCard(string hand[], int size, string card) {
   }
   return false;
 }
+string Player1(string playerhand[]) {
+  string query;
+  cout << "Your hand is: ";
+  for (int i = 0; i < 13; i++) {
+    cout << playerhand[i] << " ";
+  }
+  cout << endl;
+  cout << "Which card do you want to ask for?";
+  cin >> query;
+  return query;
+
+
+}

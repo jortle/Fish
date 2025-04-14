@@ -1,10 +1,10 @@
-// Function that will choose a random card out of the deck and replace the card
-// drawn within the deck with "0", and then return the card that was drawn
-
 #include <cstdlib>
 #include <ctime>
 #include <string>
 using namespace std;
+
+// Function that will choose a random card out of the deck and replace the card drawn within
+// the deck with "0", and then return the card that was drawn
 string drawCard(string deck[4][13]) {
   int i = 0, j = 0;
   string drawnCard = "  ";
