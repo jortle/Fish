@@ -147,20 +147,6 @@ int main() {
     computerHand[i] = drawCard(Deck);
   }
 
-  // Print player's hand
-  cout << "Player's Hand:    ";
-  for (int i = 0; i < maxHandSize; i++) {
-    cout << "[" << playerHand[i] << "] ";
-  }
-  cout << endl;
-
-  // Print computer's hand
-  cout << "Computer's Hand:  ";
-  for (int i = 0; i < maxHandSize; i++) {
-    cout << "[" << computerHand[i] << "] ";
-  }
-  cout << endl;
-
   gameLoop(playerHand, computerHand, Deck);
 
   return 0;
