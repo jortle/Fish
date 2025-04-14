@@ -1,15 +1,3 @@
-// Function for computer asking if player has any of the cards in the computer's
-// array (Yes/no option maybe?) - John Function for player asking if computer
-// has any of the cards in their array - John
-
-// function takes in an array of cards and returns a boolean value of whether
-// the pair exists game loop - player then computer take turns asking if the
-// other has a card in their hand. when computer ask if a player has a card, we
-// have the option of checking our hand or just answering the question checking
-// hand prints out the hand to the terminal then asks us again when player asks
-// if computer has a card we use a function to loop through the computer's hand
-// and check if it exists the computer then prints out the bool to the terminal
-
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
@@ -71,6 +59,4 @@ string Player1(string playerhand[]) {
   cout << "Which card do you want to ask for?";
   cin >> query;
   return query;
-
-
 }
